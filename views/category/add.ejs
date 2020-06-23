@@ -1,0 +1,28 @@
+<%- include('../layout/header.ejs')%>
+
+<div class="main">
+    <div class="container">
+      <div class="content add-post">
+        <h2>Добавление категории</h2>
+        <form method="post">
+          <div class="form-group">
+            <label for="category-name">Название категории</label>
+            <input type="text" id="category-name" name="title" />
+          </div>
+          <div class="buttons">
+            <button class="publish-button-category">Сохранить</button>
+          </div>
+        </form>
+        <div class="checkbox-div">
+          <% for (var i = 0; i < category.length; i++) { %>
+            <input class="checkbox" type="checkbox" value="<%= category[i].name %>" id="<%= category[i].id %>"><%= category[i].name %>
+          <% } %>
+        </div>
+      </div>
+
+      <%- include('../layout/sidebar.ejs')%>
+
+    </div>
+  </div>
+
+<%- include('../layout/footer.ejs')%>
