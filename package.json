@@ -34,7 +34,7 @@
     "faker": "^4.1.0",
     "jquery": "^3.5.0",
     "mkdirp": "0.5.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.9.9",
     "mongoose-autopopulate": "^0.12.2",
     "mongoose-url-slugs": "^1.0.2",
